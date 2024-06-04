@@ -8,7 +8,7 @@ type Props = {
 
 export const Titulo = ({imagem, children}:Props) => {
     return(
-        <div className="flex items-center">
+        <div className="flex items-center mb-4">
             <img src={imagem} alt="" />
             <h2 className="text-blue-400 ml-2 font-bold">{children}</h2>
         </div>
