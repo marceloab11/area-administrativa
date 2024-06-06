@@ -10,11 +10,11 @@ export const Tabela = () => {
                 <Table sx={{minWidth: 700}} aria-label="tabela-customizada">
                     <TableHead>
                         <TableRow>
-                            <TableCell>Data</TableCell>
-                            <TableCell>Hórario</TableCell>
-                            <TableCell>Profissional</TableCell>
-                            <TableCell>Especialidade</TableCell>
-                            <TableCell>Paciente</TableCell>
+                            <TableCell className="text-blue-800 text-md font-bold">Data</TableCell>
+                            <TableCell className="text-blue-800 text-md font-bold">Hórario</TableCell>
+                            <TableCell className="text-blue-800 text-md font-bold">Profissional</TableCell>
+                            <TableCell className="text-blue-800 text-md font-bold">Especialidade</TableCell>
+                            <TableCell className="text-blue-800 text-md font-bold">Paciente</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -23,7 +23,7 @@ export const Tabela = () => {
                                 <TableCell component="th" scope="row">{linha.data}</TableCell>
                                 <TableCell>{linha.horario}</TableCell>
                                 <TableCell>{linha.profissional}</TableCell>
-                                <TableCell>{linha.modalidade}</TableCell>
+                                <TableCell>{linha.especialidade}</TableCell>
                                 <TableCell>{linha.paciente}</TableCell>
                             </TableRow>
                         )}
